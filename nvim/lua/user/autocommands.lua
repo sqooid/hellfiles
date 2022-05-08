@@ -42,9 +42,7 @@ vim.cmd([[
 -- local opts = { noremap = true, silent = true }
 -- local keymap = vim.api.nvim_set_keymap
 --
--- vim.api.nvim_create_autocmd({ "FileType" }, {
---   pattern = "markdown",
---   callback = function()
---     keymap("n", "<buffer><c-x>", "<cmd>MarkdownPreview<CR>", opts)
---   end,
+-- vim.api.nvim_create_autocmd({ "BufUnload" }, {
+--   pattern = "*.md",
+--   command = "MarkdownPreviewStop"
 -- })
