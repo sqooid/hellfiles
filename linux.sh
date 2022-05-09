@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Nvim
-ln ./nvim ~/.config/nvim
+ln -s $PWD/nvim $HOME/.config/nvim
