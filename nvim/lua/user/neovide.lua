@@ -1,5 +1,5 @@
 local options = {
-  neovide_fullscreen = true,
+  -- neovide_fullscreen = true,
   neovide_remember_window_size = true,
 }
 
