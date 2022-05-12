@@ -4,7 +4,7 @@
 
 ### Requirements
 
-For Neovide, font used is InconsolataGo Nerd Font (Mono) at <https://www.nerdfonts.com/font-downloads>
+For Neovide, font used is InconsolataGo Nerd Font (non-mono) at <https://www.nerdfonts.com/font-downloads>
 
 For general functioning:
 
