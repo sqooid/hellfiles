@@ -4,6 +4,8 @@
 
 ### Requirements
 
+For Neovide, font used is InconsolataGo Nerd Font (Mono) at <https://www.nerdfonts.com/font-downloads>
+
 For general functioning:
 
 - node
