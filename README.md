@@ -25,6 +25,7 @@ Formatters:
 - rustfmt (cargo)
 - stylua (cargo)
 - prettier (npm)
+- clang-format (install llvm)
 
 For markdown preview:
 
