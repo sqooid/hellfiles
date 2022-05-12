@@ -31,7 +31,7 @@ vim.cmd([[
 
   augroup _format
     autocmd!
-    autocmd BufWritePre * lua vim.lsp.buf.format(nil, 1000)
+    autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 1000)
   augroup end
 
   augroup _close_tree

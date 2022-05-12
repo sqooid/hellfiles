@@ -84,9 +84,21 @@ local function lsp_keymaps(bufnr)
 	vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
 end
 
+local function has_value(arr, val)
+	for i, v in pairs(arr) do
+		if i == val or v == val then
+			return true
+		end
+	end
+	return false
+end
+
 M.on_attach = function(client, bufnr)
-	if client.name == "tsserver" then
-		client.server_capabilities.document_formatting = false
+	--
+	-- DISABLE FORMATTING BY LSP's HERE
+	--
+	if has_value({ "tsserver", "sumneko_lua", "jsonls" }, client.name) then
+		client.resolved_capabilities.document_formatting = false
 	end
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)

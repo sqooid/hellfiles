@@ -16,5 +16,6 @@ null_ls.setup({
 		formatting.stylua,
 		formatting.rustfmt,
 		formatting.clang_format.with({ extra_args = { "--style=Microsoft" } }),
+		formatting.terraform_fmt,
 	},
 })
