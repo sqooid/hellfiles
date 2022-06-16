@@ -4,7 +4,7 @@ Make sure the working directory is the root of this repository
 
 ## Linux
 
-`sudo ./linux.sh`
+`sudo ./linux.sh`.  Note that `xclip` may have to be installed for system clipboard to work.
 
 ## Mac
 
