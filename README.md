@@ -1,3 +1,19 @@
+# Installation
+
+Make sure the working directory is the root of this repository
+
+## Linux
+
+`sudo ./linux.sh`
+
+## Mac
+
+`sudo ./mac.sh`
+
+## Windows
+
+`./windows.bat`
+
 # Configs
 
 ## NeoVim config
