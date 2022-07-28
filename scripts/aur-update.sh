@@ -13,6 +13,6 @@ for i in $1/* ; do
   if [[ $output == "Already up to date." ]] ; then
     echo "Already up to date"
   else
-    makepkg -sirc
+    makepkg -sirc --noconfirm
   fi
 done
