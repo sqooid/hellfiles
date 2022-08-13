@@ -1,5 +1,5 @@
 #!/bin/sh
 
 # Nvim
-ln -s $PWD/nvim $HOME/.config/nvim
-ln -s $PWD/scripts/* /usr/local/bin/
+ln -s -f $PWD/nvim $HOME/.config/nvim
+ln -s -f $PWD/scripts/* /usr/local/bin/
