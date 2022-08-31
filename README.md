@@ -4,7 +4,8 @@ Make sure the working directory is the root of this repository
 
 ## Linux
 
-`sudo ./linux.sh`.  Note that `xclip` may have to be installed for system clipboard to work.
+`./linux.sh`.  Note that `xclip` may have to be installed for system clipboard to work.
+_Do not_ run with sudo as this will mess up the `$HOME` used for things like the nvim config.
 
 ## Mac
 
