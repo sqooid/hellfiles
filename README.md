@@ -35,6 +35,7 @@ For general functioning:
 - tar
 - gcc
 - ripgrep
+- unzip
 
 Formatters:
 
