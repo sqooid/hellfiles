@@ -24,6 +24,12 @@ sudo sed -i '/GRUB_THEME/c\GRUB_THEME="/usr/share/grub/themes/catppuccin-macchia
 sudo os-prober
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
+# SDDM Catppuccin
+cd /tmp
+git clone https://github.com/catppuccin/sddm.git
+rm -rf sddm/.git
+sudo mv sddm /usr/share/sddm/themes/catppuccin
+
 # Konsole Catppuccin
 cd /tmp
 git clone https://github.com/catppuccin/konsole.git && cd konsole
