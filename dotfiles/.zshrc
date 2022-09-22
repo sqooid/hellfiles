@@ -1,4 +1,6 @@
-source ~/.git-prompt.sh
+DIR=$(dirname $0)
+
+source $DIR/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 precmd () { __git_ps1 "%n" ":%~$ " "|%s" }
 
