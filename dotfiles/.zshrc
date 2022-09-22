@@ -2,7 +2,8 @@ DIR=$(dirname $0)
 
 source $DIR/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
-precmd () { __git_ps1 "%n" ":%~$ " "|%s" }
+autoload -U colors && colors
+precmd () { __git_ps1 "%B%F{red}%n%f%b:%~%F{blue}" "%f$ " "|%s" }
 
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
