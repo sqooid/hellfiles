@@ -13,8 +13,9 @@ bindkey '^H' backward-kill-word
 bindkey '^[[3~' delete-char
 bindkey '^[[3;5~' kill-word
 
-# Editor for sudoedit
+# Editor
 export SUDO_EDITOR=/usr/bin/nvim
+export EDITOR=/usr/bin/nvim
 
 # Aliases
 alias reload='source ~/.zshrc'
