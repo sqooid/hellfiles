@@ -42,9 +42,10 @@ for k, v in pairs(options) do
 end
 
 -- Proper GUI font for Windows
-if vim.fn.has("win32") then
-	vim.opt.guifont = "InconsolataGo NF"
-end
+-- if vim.fn.has("win32") then
+-- 	vim.opt.guifont = "InconsolataGo NF"
+-- end
+-- if vim.loop.os_uname().sysname == ""
 
 -- Use PowerShell 7 (messes up Packer)
 -- if vim.fn.has("win32") then
