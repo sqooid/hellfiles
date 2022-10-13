@@ -20,4 +20,4 @@ export EDITOR=/usr/bin/nvim
 # Aliases
 alias reload='source ~/.zshrc'
 alias ls='ls --color'
-which hx || alias hx='helix'
+which hx > /dev/null || alias hx='helix'
