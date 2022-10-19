@@ -29,15 +29,16 @@ vim.cmd([[
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
   augroup end
 
-  augroup _format
-    autocmd!
-    autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 1000)
-  augroup end
 
   augroup _close_tree
     autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
   augroup end
 ]])
+
+--[[ augroup _format ]]
+--[[   autocmd! ]]
+--[[   autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 1000) ]]
+--[[ augroup end ]]
 
 -- local opts = { noremap = true, silent = true }
 -- local keymap = vim.api.nvim_set_keymap
